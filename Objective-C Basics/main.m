@@ -7,22 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSLog(@"char: %lu, short int: %lu, int: %lu, long int: %lu, float: %lu, double: %lu.",
-        sizeof(short int),sizeof(int),sizeof(char),sizeof(long int),sizeof(float),sizeof(double));
-        
-        char arrayOfCharacter[] = "Ciąg znaków";
-        NSLog(@"%s",arrayOfCharacter);
-        
-        NSLog(@"Skoro if(5) -> TRUE, to if(5 == TRUE) -> %d",5 == TRUE);
-        
-        NSLog(@"Dzielenie 1/5=%d, zaś (float)1/5=%.2f",1/5, (float)1/5);
-        
-        typedef struct Point { int x; int y;} Point;
-        Point test = {2,4};
-        NSLog(@"Punkt(%d,%d)",test.x, test.y);
+        Person * person = [Person create:@"John Doe" age:44];
+        NSLog(@"Person: %@, age %ld", person.name, (long)person.age);
     }
     return 0;
 }
