@@ -28,4 +28,12 @@
     return self;
 }
 
+- (void)tellMeAStory {
+    NSLog(@"That's story began long time ago, where C was a child.");
+}
+
+- (void)tellMeAnotherStory {
+    NSLog(@"Then C had a child and named him Objective-C.");
+}
+
 @end

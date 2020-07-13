@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "StoryTeller.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Person : NSObject
+@interface Person : NSObject <StoryTeller>
 
 + (id)create:(NSString*)name age:(NSInteger)age; // Metoda klasy
 - (id)initWithName:(NSString*)name andAge:(NSInteger)age; // Metoda instancji
