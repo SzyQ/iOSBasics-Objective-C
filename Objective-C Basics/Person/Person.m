@@ -36,4 +36,20 @@
     NSLog(@"Then C had a child and named him Objective-C.");
 }
 
+- (void)doRiskyStuff:(NSError *__autoreleasing *)error {
+    if(error == NULL) {
+        return;
+    }
+    *error = [NSError errorWithDomain:@"My.Unique.Domain" code:1 userInfo:nil];
+}
+
+- (void)executeThrowingException {
+    @throw [NSException
+            exceptionWithName:@"Invalid action!"
+            reason:@"Too many unicorns"
+            userInfo:[NSDictionary dictionaryWithObjectsAndKeys:
+                      @"Detail", @"Rainbow had too many colors!",
+                      nil]];
+}
+
 @end
