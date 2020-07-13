@@ -28,6 +28,7 @@
 		961DC20124BCE26100188350 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		961DC20C24BCEBED00188350 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		961DC20D24BCEBED00188350 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		961DC20F24BCF37C00188350 /* StoryTeller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryTeller.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,19 +61,20 @@
 		961DC20024BCE26100188350 /* Objective-C Basics */ = {
 			isa = PBXGroup;
 			children = (
-				961DC20824BCEA3A00188350 /* Course */,
+				961DC20824BCEA3A00188350 /* Person */,
 				961DC20124BCE26100188350 /* main.m */,
 			);
 			path = "Objective-C Basics";
 			sourceTree = "<group>";
 		};
-		961DC20824BCEA3A00188350 /* Course */ = {
+		961DC20824BCEA3A00188350 /* Person */ = {
 			isa = PBXGroup;
 			children = (
 				961DC20C24BCEBED00188350 /* Person.h */,
 				961DC20D24BCEBED00188350 /* Person.m */,
+				961DC20F24BCF37C00188350 /* StoryTeller.h */,
 			);
-			path = Course;
+			path = Person;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
