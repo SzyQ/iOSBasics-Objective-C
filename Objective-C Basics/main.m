@@ -21,6 +21,20 @@ int main(int argc, const char * argv[]) {
         if([person respondsToSelector:@selector(considerTellingMeAnotherStory)]){
             [person considerTellingMeAnotherStory];
         }
+        
+        [person doRiskyStuff:nil];
+        NSError *error;
+        [person doRiskyStuff:&error];
+        if(error){
+            NSLog(@"%@", error.localizedDescription);
+        }
+        @try {
+            [person executeThrowingException];
+        } @catch (NSException *exception) {
+            NSLog(@"%@", exception.reason);
+        } @finally {
+            NSLog(@"That code runs always.");
+        }
     }
     return 0;
 }

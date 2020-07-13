@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (id)create:(NSString*)name age:(NSInteger)age; // Metoda klasy
 - (id)initWithName:(NSString*)name andAge:(NSInteger)age; // Metoda instancji
 
+- (void)doRiskyStuff:(NSError**)error;
+- (void)executeThrowingException;
+
 @property(strong) NSString *name;
 @property(nonatomic) NSInteger age;
 
