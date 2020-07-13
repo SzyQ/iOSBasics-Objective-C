@@ -18,6 +18,9 @@ int main(int argc, const char * argv[]) {
         if([person respondsToSelector:storySelector]) {
             [person tellMeAnotherStory];
         }
+        if([person respondsToSelector:@selector(considerTellingMeAnotherStory)]){
+            [person considerTellingMeAnotherStory];
+        }
     }
     return 0;
 }
