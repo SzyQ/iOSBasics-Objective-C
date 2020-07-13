@@ -16,5 +16,7 @@
 
 -(void)tellMeAStory;
 -(void)tellMeAnotherStory;
+@optional
+-(void)considerTellingMeAnotherStory;
 
 @end
