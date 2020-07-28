@@ -23,6 +23,16 @@ int main(int argc, const char * argv[]) {
         typedef struct Point { int x; int y;} Point;
         Point test = {2,4};
         NSLog(@"Punkt(%d,%d)",test.x, test.y);
+        NSString *concatenated = [NSString stringWithFormat:@"Concatenate this %@", @"string"];
+        NSLog(@"%@", concatenated);
+        
+        //Typy wyliczeniowe:
+        enum status {Unknown, Pass, Failed};
+        typedef enum status status;
+        enum status result = Pass;
+        status resultZtypedef = Pass;
+        status wynikZLiczby = 0;
+        NSLog(@"Wartość statusu dla 0 to Unknown: %d", wynikZLiczby == Unknown);
     }
     return 0;
 }
