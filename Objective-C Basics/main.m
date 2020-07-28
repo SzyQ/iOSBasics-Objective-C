@@ -11,7 +11,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSLog(@"char: %lu, short int: %lu, int: %lu, long int: %lu, float: %lu, double: %lu.",
-        sizeof(short int),sizeof(int),sizeof(char),sizeof(long int),sizeof(float),sizeof(double));
+        sizeof(char),sizeof(short int),sizeof(int),sizeof(long int),sizeof(float),sizeof(double));
         
         char arrayOfCharacter[] = "Ciąg znaków";
         NSLog(@"%s",arrayOfCharacter);
